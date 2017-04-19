@@ -1,0 +1,19 @@
+{
+  "name": "bootstrap-dropdown-hover",
+  "version": "1.0.0",
+  "description": "for bootstrap 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpeItcLoc03/bootstrap-dropdown-hover.git"
+  },
+  "author": "kybarg (https://github.com/kybarg)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OpeItcLoc03/bootstrap-dropdown-hover/issues"
+  },
+  "homepage": "https://github.com/OpeItcLoc03/bootstrap-dropdown-hover#readme"
+}
