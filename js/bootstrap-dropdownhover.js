@@ -49,6 +49,10 @@
          $(this).removeClass('show');
      });
 
+    $('.dropdown-menu').not($this.next()).each(function(){
+      $(this).removeClass('show');
+    });
+  
     var effect = this.options.animations[0]
 
     if ($this.is('.disabled, :disabled')) return
@@ -63,6 +67,8 @@
 
       $parent
         .addClass('show')
+
+      $dropdown.addClass('show');
 
       var side = this.position($dropdown)
       side == 'top' ? effect = this.options.animations[2] :
@@ -92,8 +98,10 @@
     var that = this
     var $this = $(_dropdownLink)
     var $parent  = $this.parent()
+    var $dropdown = $this.next('.dropdown-menu')
     Dropdownhover.TIMEOUT = window.setTimeout(function () {
       $parent.removeClass('show')
+      $dropdown.removeClass('show')
     }, Dropdownhover.DELAY)
   }
 
